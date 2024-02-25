@@ -1,0 +1,10 @@
+For this part of the assignment I utilzied a lot more creative function in order
+to specify which features to classify. For instance I created functions based on certain patterns
+within the text. For instance I create 2 functions for checking if most lines start with a quote character and string. 
+I also created multiple functions that utilize calculating the ratio of a certain character to all the characters in a line or segment.
+I did this to check internal whitespace within a segement to help classify my tables. The features that seemed to work poorly
+where the ones that were shared accross labels. For instance when classifying if a segement is a table or graphic
+it was hard to keep my mostly_internal_whitespace feature from being shared accross both labels. This is because both tables and graphics
+have a lot of internal whitespace. Sometimes I also noticed it was hard to classify a segement once I had classified a segement for most types
+since at this point many features were shared accross labels. I also noticed that the more features I added the more overfit my model became and the worse it
+responded to the testing data.
